@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='copyright-bar bg-purple-800'>
-        <h6 className='text-sm'>@2020 Team Alpha. All Rights Reserved.</h6>
+        <h6 className='text-sm'>@IIITL. All Rights Reserved.</h6>
         <div>
           <Link to='/'>Contact us</Link>
           <Link to='/'>Provide feedback</Link>

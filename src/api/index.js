@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const baseUrl = process.env.REACT_APP_BASE_URL;
+const baseUrl = 'https://ancient-falls-43730.herokuapp.com/api';
 const algorithmiaApiKey = process.env.REACT_APP_ALGORITHMIA_KEY;
 
 export const uploadImage = async (formData) => {
   try {
-    const token = process.env.REACT_APP_IMGBB_API_KEY;
-    const url = `${process.env.REACT_APP_IMAGEBB_URL}?key=${token}`;
+    const token = '2eabc27decf0dcbc201c7cc93b105bf2';
+    const url = `https://api.imgbb.com/1/upload?key=${token}`;
     const options = {
       headers: {
         'content-type': 'multipart/form-data',
@@ -241,7 +241,7 @@ export const sendEmail = async (id, org, body) => {
   const msg = await window.Email.send({
     SecureToken: process.env.REACT_APP_SMTP_SECURE_TOKEN,
     To: id,
-    From: 'rajatverma5885045@gmail.com',
+    From: 'karpit100@gmail.com',
     Subject: `Regarding application at ${org}`,
     Body: body,
   });
